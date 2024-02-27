@@ -1,4 +1,28 @@
-<!doctype html>
+<?php
+/* Smarty version 4.3.4, created on 2024-02-28 00:28:19
+  from 'C:\xampp\htdocs\web\proyecto_final_progra_3\view\templates\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.4',
+  'unifunc' => 'content_65de7013a72207_48004138',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '02aaa7b26ec0a6bbdace70c9d2281b1a410607fc' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\web\\proyecto_final_progra_3\\view\\templates\\index.tpl',
+      1 => 1709076498,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:sideBar.tpl' => 1,
+  ),
+),false)) {
+function content_65de7013a72207_48004138 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="en">
 
 <head>
@@ -49,7 +73,8 @@
 <body translate="no" class="flex items-center justify-center w-screen h-screen p-10 space-x-6 bg-gray-300"
   data-new-gr-c-s-check-loaded="14.1155.0" data-gr-ext-installed="">
 
-  <!-- {include file="sideBar.tpl"} -->
+  <!-- <?php $_smarty_tpl->_subTemplateRender("file:sideBar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?> -->
 
   <!-- start main container-->
   <div class="main-container">
@@ -169,21 +194,9 @@
     </div>
     <!-- end sideBar -->
 
-    {* start table  *}
-    <div class="sub-container">
+        <div class="sub-container">
 
-    {* <div class="content-img">
-            <h2 class="title"> Colegio UH</h2>
-            <br>  
-            <p>
-            Descubre Colegio UH, donde la educación de calidad se combina con un entorno inclusivo. En nuestro compromiso con el desarrollo integral, fomentamos la curiosidad y la compasión. En Colegio UH, cada estudiante es único. Nuestro equipo dedicado trabaja para potenciar el potencial individual, promoviendo el pensamiento crítico y la responsabilidad social.
-            <br>
-            Nuestras instalaciones modernas ofrecen un ambiente propicio para el aprendizaje activo. Desde aulas tecnológicas hasta espacios al aire libre, cada rincón de nuestro campus está diseñado para inspirar. Fomentamos una sólida comunidad a través de eventos culturales, deportivos y académicos. Con programas extracurriculares diversos, preparamos a los estudiantes para enfrentar el mundo con confianza.
-            <br>
-            Únete a nosotros en Colegio UH, donde el futuro se forma hoy. ¡Bienvenido a un lugar donde cada estudiante brilla!
-            </p>
-    </div> *}
-
+    
 
     <h2 class="title">INFORMACIÓN</h2>
     <table class="table table-dark table-bordered border border-secondary-subtle border border-2">
@@ -217,8 +230,7 @@
   
 
 
-    {* end table  *}
-
+    
     <!-- start footer -->
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
       <!-- Section: Social media -->
@@ -346,11 +358,14 @@
   <!-- end main container-->
 
   <!-- start scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  <?php echo '<script'; ?>
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+    <?php echo '</script'; ?>
+>
   <!-- end scripts -->
 
 </body>
 
-</html>
+</html><?php }
+}
