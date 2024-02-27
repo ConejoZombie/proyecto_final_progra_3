@@ -1,4 +1,28 @@
-<!doctype html>
+<?php
+/* Smarty version 4.3.4, created on 2024-02-27 04:56:32
+  from 'C:\xampp\htdocs\progra3\proyecto_final_progra_3\view\templates\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.4',
+  'unifunc' => 'content_65dd5d70cc18c2_54622307',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'a78e1072d1ca55a097d7ecc92d072a4658c0c6f0' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\progra3\\proyecto_final_progra_3\\view\\templates\\index.tpl',
+      1 => 1709006191,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:sideBar.tpl' => 1,
+  ),
+),false)) {
+function content_65dd5d70cc18c2_54622307 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="en">
 
 <head>
@@ -44,7 +68,8 @@
 <body translate="no" class="flex items-center justify-center w-screen h-screen p-10 space-x-6 bg-gray-300"
   data-new-gr-c-s-check-loaded="14.1155.0" data-gr-ext-installed="">
 
-  <!-- {include file="sideBar.tpl"} -->
+  <!-- <?php $_smarty_tpl->_subTemplateRender("file:sideBar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?> -->
 
   <!-- start main container-->
   <div class="main-container">
@@ -109,6 +134,30 @@
         </li>
       </ul>
       <hr>
+      <!-- <div class="dropdown">
+        <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>mdo</strong>
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Pérfil</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div> -->
+      <!-- <select class="form-select" aria-label="Default select example">
+        <option selected>Seleccione el tipo de usuario</option>
+        <option value="1">Administrador</option>
+        <option value="2">Alumno</option>
+        <option value="3">Profesor</option>
+      </select>
+      <input class="form-control" type="text" placeholder="Usuario" aria-label="default input example"> -->
+
       <form>
         <div class="row mb-3">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
@@ -307,11 +356,14 @@
   <!-- end main container-->
 
   <!-- start scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  <?php echo '<script'; ?>
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+    <?php echo '</script'; ?>
+>
   <!-- end scripts -->
 
 </body>
 
-</html>
+</html><?php }
+}
