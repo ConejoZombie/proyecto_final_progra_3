@@ -1,4 +1,27 @@
-<!doctype html>
+<?php
+/* Smarty version 4.3.4, created on 2024-04-06 10:12:37
+  from 'C:\xampp\htdocs\escuela\proyecto_final_progra_3\view\templates\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.4',
+  'unifunc' => 'content_661103f5b160f4_81991710',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '08a969aa18b3c125712975c9a3d2147bb72477a2' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\escuela\\proyecto_final_progra_3\\view\\templates\\index.tpl',
+      1 => 1712390981,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_661103f5b160f4_81991710 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="en">
 
 <head>
@@ -266,10 +289,8 @@
       </ul>
       <hr>
       <div class="dropdown">
-      {*-------------------------------------------------------------------------*}
-
-      {* FORMULARIO DE LOGIN *}
-        <form action="index.php" method="post">
+      
+              <form action="index.php" method="post">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="usuario" > 
@@ -283,12 +304,10 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" value="Login" name="accion" class="btn btn-primary">Login</button>  {* BANDERA *}
-        </form>
+          <button type="submit" value="Login" name="accion" class="btn btn-primary">Login</button>          </form>
 
 
-        {*-------------------------------------------------------------------------*}
-      </div>
+              </div>
     </div>  
     <!-- end sideBar -->
     
@@ -306,8 +325,7 @@
     </div>
     <!--end navBar-->
     
-    {* start table *}
-    <div class="sub-container-table">
+        <div class="sub-container-table">
       
       <div class="content-img">
         <h2 class="title"> Colegio UH</h2>
@@ -359,8 +377,7 @@
         </tbody>
       </table>
     </div>
-    {* end table *}
-      
+          
       
     <!-- start footer -->
     <footer class="footer">
@@ -406,11 +423,14 @@
   <!-- end main container-->
       
   <!-- start scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  <?php echo '<script'; ?>
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-  </script>
+  <?php echo '</script'; ?>
+>
   <!-- end scripts -->
         
 </body>
 
-</html>
+</html><?php }
+}
