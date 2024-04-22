@@ -40,12 +40,25 @@ class control {
             }
     
         }else{
+            $this->view->setDisplay("login.tpl");
+        } if(!empty($_POST["btningresar"]) ) {
             $this->view->setDisplay("index.tpl");
-        }
-
+          //  if (!empty($_POST["usuario"]) and empty($_POST["password"])) {
+          //      echo '<div class="alert alert-danger">Los campos están vacíos</div>';
+          //  } else {
+          //      $ID_USUARIO=$_POST["usuario"];
+          //      $PASSWORD=$_POST["password"];
+         //       $sql=$conexion->query(" select * from usuario where usuario='$ID_USUARIO' and password='$PASSWORD' ");
+         //       if ($datos=$sql->fetch_object()) {
+        //            header("location:index.tpl");
+       //         } else {
+       //             echo '<div class="alert alert-danger">Acceso denegado</div>';
+       //     }
+      //  }
+        
     }
-
-
+    
+}
     private function Login() {
         $usuario = $_REQUEST['usuario'];
         $password   = $_REQUEST['password'];

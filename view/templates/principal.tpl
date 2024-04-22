@@ -7,38 +7,32 @@
   <title>Bootstrap demo</title>
 
   <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
     html,
     body {
-      width: 100%;
-      height: 100vh;
+      height: 100%;
     }
 
     .side-bar {
-      width: 19%;
-      height: 120vh;
-      position: absolute;
+      height: 100%;
     }
 
     .main-container {
-      z-index: 999;
       width: 100%;
-      height: 120vh;  
-      margin-top: -100vh;
-      position: absolute;
+      height: 100%;
+      margin: 0;
       background-color: #444;
     }
 
     .sub-container {
-      width: 81%;
+      width: 85%;
       height: 4vh;
       position: absolute;
       top: 0;
-      margin-left: 19%;
+      left: 281px;
       background-color: #444;
       text-align: center;
       z-index: 21;
@@ -51,11 +45,12 @@
     }
 
     .sub-container-table {
-      width: 60%;
-      margin-top: 5vh;
-      margin-left: 30%;
+      width: 75%;
+      margin-top: 25vh;
       height: 60%;
       position: absolute;
+      top: -4vh;
+      left: 375px;
       background-color: #444;
       text-align: center;
     }
@@ -92,7 +87,7 @@
 
     nav button {
       border-radius: 50px;
-      border: solid 1px #fff;
+      border: solid 3px #fff;
       transition: all 0.3s ease 0s;
     }
 
@@ -150,16 +145,8 @@
     }
 
     .footer {
-      width: 100%;
-      height: 60vh;
-      margin-top: 120vh;
-      position: absolute;
       background-color: #24262b;
       padding: 80px 0;
-    }
-
-    .footer ol,ul{
-      padding-left: 0rem;
     }
 
     .Footer-row {
@@ -226,7 +213,6 @@
   </style>
 </head>
 
-
 <body translate="no" class="flex items-center justify-center w-screen h-screen p-10 space-x-6 bg-gray-300"
   data-new-gr-c-s-check-loaded="14.1155.0" data-gr-ext-installed="">
 
@@ -234,7 +220,7 @@
   <!-- start main container-->
   <div class="main-container">
     <!-- start sideBar -->
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark side-bar">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark side-bar" style="width: 280px;">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
         <span class="fs-4">Sidebar</span>
@@ -280,7 +266,7 @@
       </ul>
       <hr>
       <div class="dropdown">
-      {*-------------------------------------------------------------------------*}
+      {-------------------------------------------------------------------------}
 
       {* FORMULARIO DE LOGIN *}
         <form action="index.php" method="post">
@@ -301,7 +287,7 @@
         </form>
 
 
-        {*-------------------------------------------------------------------------*}
+        {-------------------------------------------------------------------------}
       </div>
     </div>  
     <!-- end sideBar -->
